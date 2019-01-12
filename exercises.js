@@ -159,7 +159,14 @@ console.log(isEqual('cat', 'cat'));
  * Console.log your result.
 */
 
-
+function notEqual(first, second) {
+  if(first !== second) {
+    return "Opposites do Attract";
+  }else {
+    return "Cause it's Like You're my Mirror"
+  }
+}
+console.log(notEqual('dogs', 'cats'));
 /*
  * #8
  * Function - spareChange
@@ -172,8 +179,14 @@ console.log(isEqual('cat', 'cat'));
  * Console.log your result.
 */ 
 
-
-
+function spareChange(money) {
+  if (money > 100) {
+    return true;
+  }else {
+    return false;
+  }
+}
+console.log("Do I have Spare Change?", spareChange(120));
 /*
  * #9
  * Function - dirty30
@@ -188,8 +201,15 @@ console.log(isEqual('cat', 'cat'));
  * Console.log your result.
 */ 
 
-
-
+function dirty30(one, two, three){
+  var sum = one + two + three;
+  if(sum > 30 ) {
+    return true;
+  }else {
+    return false;
+  }
+}
+console.log("Is it dirty?: ", dirty30(10,5,16));
 /*
  * #10
  * Function - evenStevens
