@@ -95,8 +95,14 @@ console.log(isGreaterThan(2, 5));
  * Console.log your result.
 */
 
-
-
+function mustBeTrue (boo) {
+  if (boo === true) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log('Must Be True: ', mustBeTrue(true));
 /*
  * #5
  * Function - bigBird
@@ -109,7 +115,14 @@ console.log(isGreaterThan(2, 5));
  * Console.log your result.
 */
 
-
+function bigBird (word) {
+  if (word.length === 3){
+    return 'Word to Big Bird!';
+  } else {
+    return false;
+  }
+}
+console.log("What's the word?: ", bigBird('cat'));
 
 /*
  * #6
@@ -124,6 +137,14 @@ console.log(isGreaterThan(2, 5));
  * Console.log your result.
 */
 
+function isEqual(first, second) {
+  if (first === second) {
+    return 'You Look Mahvelous!'
+  }else {
+    return "I don't know who you are anymore!";
+  }
+}
+console.log(isEqual('cat', 'cat'));
 
 /*
  * #7
