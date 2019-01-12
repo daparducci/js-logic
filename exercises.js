@@ -51,6 +51,15 @@ console.log(voter);
  * Console.log your result.
 */
 
+function login (password) {
+  if(password === 'test1234') {
+    return 'Login Success!'
+  } else {
+    return 'Try again later!'
+  }
+  
+}
+console.log(login('test1234'));
 
 /*
  * #3
