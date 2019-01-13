@@ -222,7 +222,14 @@ console.log("Is it dirty?: ", dirty30(10,5,16));
  * Console.log your result.
 */ 
 
-
+function evenStevens (num) {
+  if(num % 2 == 0 ) {
+    return true;
+  }else {
+    return false;
+  }
+}
+console.log(evenStevens(3));
 
 
 /*
@@ -238,7 +245,14 @@ console.log("Is it dirty?: ", dirty30(10,5,16));
  * Console.log your result.
 */ 
 
-
+function daClub(cover, age) {
+  if (cover >= 21 && age >= 21) {
+    return "Welcome to the Legends Lounge";
+  }else {
+    return "Chuck E Cheese is Across the Street";
+  }
+}
+console.log(daClub(20, 21));
 /*
  * #12
  * Function - graduation
@@ -252,6 +266,14 @@ console.log("Is it dirty?: ", dirty30(10,5,16));
  * Console.log your result.
 */ 
 
+function graduation (credits, thesis) {
+  if (credits >= 120 || thesis === true) {
+    return "Congratulations on a Job Well Done";
+  }else {
+    return "See you in Summer School";
+  }
+}
+console.log(graduation(150, true));
 
 
 /*
@@ -266,6 +288,14 @@ console.log("Is it dirty?: ", dirty30(10,5,16));
  * Console.log your result.
 */ 
 
+function moneyTrain (speed) {
+  if ( speed < 50) {
+    return "You are riding Honolulu's Rail.";
+  }else {
+    return "You are riding Amtrak";
+  }
+}
+console.log(moneyTrain(65));
 
 /*
  * #14
@@ -280,7 +310,20 @@ console.log("Is it dirty?: ", dirty30(10,5,16));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
-
+var budget = 35;
+var doughnutPrice = 5;
+var doughnutBought = 0;
+function buyDoughnut (){
+  if (budget >= doughnutPrice ){
+    budget -= doughnutPrice;
+    doughnutBought +=1;
+    return "You bought " + doughnutBought + " doughnuts";
+  } else {
+    return "No money for Doughnuts";
+  }
+}
+console.log(buyDoughnut());
+console.log(buyDoughnut());
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
