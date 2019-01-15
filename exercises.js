@@ -327,8 +327,33 @@ console.log(buyDoughnut());
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
-
-
+/*
+function dailySpecials(special) {
+  var day = 'Friday';
+  var menu = null;
+  
+  switch (day) {
+    case 'Monday':
+        menu = 'Loco Moco';
+        break;
+    case 'Tuesday':
+        menu = 'Tacos';
+        break;
+    case 'Wednesday':
+        menu = 'Fried Chicken';
+        break;
+    case 'Thursday':
+        menu = 'Pizza';
+        break;
+    case 'Friday':
+        menu = 'Sandwich';
+        break;
+      default:
+        menu = 'Chef Special';
+         
+  }
+  
+  console.log(dailySpecials()); */
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
@@ -357,6 +382,10 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+for (var i = 1; i <= 5; i +=1) {
+  
+  console.log('Player: ' + i);
+}
 
 /* 
  * #16
@@ -364,6 +393,9 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+  for (i = 0; i < myFavFoods.length; i += 1) {
+    console.log('Favorite Food: ' + myFavFoods[i]);
+  }
 
 /*
  * #17
@@ -380,8 +412,18 @@ for (var i = 0; i<toyotaModels.length; i++){
  * Console.log your result.
 */
 
+var numArray = [ 1, 2, 3, 4, 5];
 
 
+function sumItUp(arr) {
+  var total = 0;
+  for (i = 0; i < arr.length; i += 1) {
+    console.log(arr[i]);
+    total += arr[i];
+  }
+  return total;
+}
+console.log('sumItUp: ', sumItUp(numArray) );
 /*
  * #18
  * Function - allStars
